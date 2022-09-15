@@ -23,10 +23,11 @@ func handle_collisions():
 func _physics_process(delta):
 	velocity = move_and_slide(velocity)
 	handle_collisions()
+	print('Hello World')
 
 func set_velocity(v):
 	if(claimed):
-		velocity = v.normalized() * speed
+		velocity = v.normalized() * speed*2
 
 func level_up():
 	level+=1

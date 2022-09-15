@@ -27,7 +27,7 @@ func _physics_process(delta):
 
 func set_velocity(v):
 	if(claimed):
-		velocity = v.normalized() * speed
+		velocity = v.normalized() * speed*2
 
 func level_up():
 	level+=1

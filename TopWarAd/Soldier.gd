@@ -23,7 +23,6 @@ func handle_collisions():
 func _physics_process(delta):
 	velocity = move_and_slide(velocity)
 	handle_collisions()
-	print('Hello World')
 
 func set_velocity(v):
 	if(claimed):
